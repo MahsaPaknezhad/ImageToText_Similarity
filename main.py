@@ -163,7 +163,7 @@ def plot_matrix(data_path, sim_matrix):
     plt.colorbar(shrink=0.5)
     
     # Set the title and save the figure
-    plt.title("Cosine Similarity between Text and Image Embeddings", size=20)
+    plt.title("Cosine Similarity between Image and Caption Embeddings", size=20)
     plt.savefig(os.path.join(data_path, 'similarity_matrix.jpg'), dpi=300, bbox_inches='tight')
     return
 

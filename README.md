@@ -27,7 +27,7 @@ To run the code, activate the created ```clip_env``` venv and run the ```main.py
 - ```image_captions.jpg```: This figure visualises each image-caption pair and their measured similarity. 
 - ```similarity_matrix.jpg```: This figure shows similarity between all possible image-caption pairs in the input CSV file.  
 
-These figures are provided below for the reader's conveniece. The first figure shows each image, its corresponding caption and the measured cosine similarity between the pair. 
+These figures are provided below for the reader's conveniece. The first figure shows each image, its corresponding caption and the measured cosine similarity between the image-caption pair. 
 
 ![ImageCaptionPairs](assets/image_captions.jpg)
 
@@ -47,8 +47,8 @@ A workstation with the following specifications was used to run the code:
 
 Using the above workstation, below is a summary of the code's time and memory usage:
 <table   align="center" style="margin-left: auto; margin-right: auto;">
-  <tr><th>Time (Seconds)</th>           <th>Memory (MB)</th></tr>
-  <tr><td>4.90 </td>   <td>3480</td></tr>
+  <tr><th>Time (Seconds)</th>           <th>Memory (GB)</th></tr>
+  <tr><td>4.90 </td>   <td>3.48</td></tr>
 </table>
 
 ## Optimization for Large-scale Inference
@@ -59,9 +59,10 @@ Multiple approaches can be taken to improve the speed and memory requirements fo
 - **Model Quantization:** Here we are referring to post-training quantization where the weights and activations of the trained model are quantized to lower prediction after the training process. Pytorch packages such as ```torch.quantization.quantize_static``` and ```torch.quantization.quantize_dynamic``` reduce precision of model parameters which can lead to reduced memory footprints and faster inference. 
 - **Model Pruning and Distillation:** These are techniques that aim to reduce the size of the trained model without significantly impacting its performance. Model pruning selectively removes parameters and connections that contribute minimally to the model's performance. Model distillation is a technique where a student (smaller) model is trained to mimic the behavior of the teacher (larger) model. Both techniques allow for faster inference while maintaining accuracy. 
 
-## How Can This Method Help with Curating Text-to-Image Model Training
+## How This Helps with Curating Data for Text-to-Image Model Training
+By leveraging the text and image embeddings mapped in the latent space, it becomes possible to generate new image-text pairs based on the proximity of each image embedding. Text embeddings closely associated with each image embedding can serve as suitable captions for the respective images. Furthermore, this method facilitates the discovery of new images corresponding to each caption. In essence, CLIP offers a pathway to data augmentation by generating additional image-caption pairs. The process is visually explained in the image below: 
 
-
+![DataAugmentation](assets/clip_for_augmentation.png)
 
 
 
