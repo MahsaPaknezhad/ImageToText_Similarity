@@ -38,15 +38,11 @@ The second image displays the calculated cosine similarity between all potential
 ## System Specification
 A workstation with the following specifications was used to run the code: 
 
-<p align="center">
-| GPU | GPU Memory (GiB)| vCPUs | Memory (GiB)|
-| :-------: | :-------: | :-------: | :-------: |
-| 1	| 24 |	8 |	32 |
-</p>
-<table style="margin-left: auto; margin-right: auto;">
+<table   align="center" style="margin-left: auto; margin-right: auto;">
   <tr><th>GPU</th>           <th>GPU Memory (GiB)</th>      <th>vCPUs</th>  <th>Memory (GiB)</th></tr>
   <tr><td>1 Apples</td>   <td>24</td>       <td>8</td>          <td>32</td></tr>
 </table>
+
 ## Resource Usage
 
 
