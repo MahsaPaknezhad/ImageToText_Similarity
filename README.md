@@ -53,10 +53,13 @@ Using the above workstation, below is a summary of the code's time and memory us
 
 ## Optimization for Large-scale Inference
 
-Multiple approaches can be taken to improve the speed and memory requirements for large-scale inference tasks including:
+Multiple approaches can be taken to improve the speed and memory requirements for large-scale inference tasks. These include:
 
 - **Distributed and Parallel Computing:** there exists multiple pytorch packages that faciliate parallel and distributed programming on CPUs and GPUs. Examples of these packages include ```torch.distributed``` which allows distributing the inference tasks on multiple machines, ```torch.nn.parallel``` that allows parallelising a process on GPUs on the same machine and ```torch.utils.data.DataLoader``` that allows efficient data processing and batching using multiple CPUs. These packages help improve inference speed. 
 - **Model Quantization:** Here we are referring to post-training quantization where the weights and activations of the trained model are quantized to lower prediction after the training process. Pytorch packages such as ```torch.quantization.quantize_static``` and ```torch.quantization.quantize_dynamic``` reduce precision of model parameters which can lead to reduced memory footprints and faster inference. 
+- **Model Pruning and Distillation:** These are techniques that aim to reduce the size of the trained model without significantly impacting its performance. Model pruning selectively removes parameters and connections that contribute minimally to the model's performance. Model distillation is a technique where a student (smaller) model is trained to mimic the behavior of the teacher (larger) model. Both techniques allow for faster inference while maintaining accuracy. 
+
+## How Can This Method Help with Curating Text-to-Image Model Training
 
 
 
