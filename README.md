@@ -36,15 +36,19 @@ The second image displays the calculated cosine similarity between all potential
 ![SimilarityMatrix](assets/similarity_matrix.jpg)
 
 ## System Specification
-A workstation with the following specifications was used to run the code 
+A workstation with the following specifications was used to run the code: 
 
+<div style="margin-left: auto;
+            margin-right: auto;
+            width: 50%">
 
 | GPU | GPU Memory (GiB)| vCPUs | Memory (GiB)|
 | :-------: | :-------: | :-------: | :-------: |
 | 1	| 24 |	8 |	32 |
-
+</div>
 
 ## Resource Usage
+
 
 
 
