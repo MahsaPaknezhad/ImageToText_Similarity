@@ -1,6 +1,6 @@
 # Solution for the AI Team Challenge
 
-For this challenge, we deployed [CLIP](https://openai.com/blog/clip/). CLIP (Contrastive Language-Image Pre-Training) is a deep learning model that is trained on a variety of (image, text) pairs. CLIP has both an image encoder and a language encoder. As a result of its novel training process, CLIP is able to map texts and images to the same latent space.
+For this challenge, we deployed [CLIP](https://openai.com/blog/clip/). CLIP (Contrastive Language-Image Pre-Training) is a deep learning model that is trained on a variety of image-caption pairs. CLIP has both an image encoder and a language encoder. As a result of its novel training process, CLIP is able to map texts and images to the same latent space.
 
 ## Approach
 
@@ -22,5 +22,16 @@ $ pip install git+https://github.com/openai/CLIP.git
 Replace `cudatoolkit=11.2` above with the appropriate CUDA version on your machine or `cpuonly` when installing on a machine without a GPU.
 
 To run the code, activate the created ```clip_env``` venv and run the ```main.py``` python file. At the conclusion of the file's execution, the following outputs are generated:
+
+- ```output.csv```: This file is a copy of the provided in CSV file with an additional column showing similarity of the image-caption pair.
+- ```image_captions.jpg```: This figure visualises each image-caption pair and their measured similarity. 
+- ```similarity_matrix.jpg```: This figure shows similarity between all possible image-caption pairs in the input CSV file.  
+
+The figures are provided below for the reader's conveniece. 
+
+![ImageCaptionPairs](assets/image_captions.jpg)
+
+![SimilarityMatrix](assets/similarity_matrix.jpg)
+
 
 
