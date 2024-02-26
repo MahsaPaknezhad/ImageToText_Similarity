@@ -62,7 +62,7 @@ Multiple approaches can be taken to improve the speed and memory requirements fo
 ## How This Helps with Curating Data for Text-to-Image Model Training
 By leveraging the text and image embeddings mapped in the latent space, it becomes possible to generate new image-text pairs based on the proximity of each image embedding. Text embeddings closely associated with each image embedding can serve as suitable captions for the respective images. Furthermore, this method facilitates the discovery of new images corresponding to each caption. In essence, CLIP offers a pathway to data augmentation by generating additional image-caption pairs. The process is visually explained in the image below: 
 
-<img align='center' src="assets/clip_for_augmentation.png" width="300">
+<img align="center" src="assets/clip_for_augmentation.png" width="300">
 
 
 
