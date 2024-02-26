@@ -41,6 +41,7 @@ A workstation with the following specifications was used to run the code
 
 | GPU | GPU Memory (GiB)| vCPUs | Memory (GiB)|
 | :-------: | :-------: | :-------: | :-------: |
+| 1	| 24 |	8 |	32 |
 
 
 ## Resource Usage
