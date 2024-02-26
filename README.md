@@ -38,11 +38,10 @@ The second image displays the calculated cosine similarity between all potential
 ## System Specification
 A workstation with the following specifications was used to run the code 
 
-<center>
+
 | GPU | GPU Memory (GiB)| vCPUs | Memory (GiB)|
 | :-------: | :-------: | :-------: | :-------: |
-| 1	| 24 |	8 |	32 |
-</center>
+
 
 ## Resource Usage
 
