@@ -27,9 +27,11 @@ To run the code, activate the created ```clip_env``` venv and run the ```main.py
 - ```image_captions.jpg```: This figure visualises each image-caption pair and their measured similarity. 
 - ```similarity_matrix.jpg```: This figure shows similarity between all possible image-caption pairs in the input CSV file.  
 
-The figures are provided below for the reader's conveniece. 
+These figures are provided below for the reader's conveniece. The first figure shows each image, its corresponding caption and the measured cosine similarity between the pair. 
 
 ![ImageCaptionPairs](assets/image_captions.jpg)
+
+The second image displays the calculated cosine similarity metric among all potential pairs of images and captions contained within the input CSV file.
 
 ![SimilarityMatrix](assets/similarity_matrix.jpg)
 
