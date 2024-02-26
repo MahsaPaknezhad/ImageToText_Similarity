@@ -40,10 +40,17 @@ A workstation with the following specifications was used to run the code:
 
 <table   align="center" style="margin-left: auto; margin-right: auto;">
   <tr><th>GPU</th>           <th>GPU Memory (GiB)</th>      <th>vCPUs</th>  <th>Memory (GiB)</th></tr>
-  <tr><td>1 Apples</td>   <td>24</td>       <td>8</td>          <td>32</td></tr>
+  <tr><td>1 </td>   <td>24</td>       <td>8</td>          <td>32</td></tr>
 </table>
 
 ## Resource Usage
+
+Using the above workstation, below is a summary of the code's time and memory usage:
+<table   align="center" style="margin-left: auto; margin-right: auto;">
+  <tr><th>Time (seconds)</th>           <th>Memory (MB)</th></tr>
+  <tr><td>4.90 </td>   <td>3480</td></tr>
+</table>
+
 
 
 
