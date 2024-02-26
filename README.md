@@ -31,9 +31,20 @@ These figures are provided below for the reader's conveniece. The first figure s
 
 ![ImageCaptionPairs](assets/image_captions.jpg)
 
-The second image displays the calculated cosine similarity metric among all potential pairs of images and captions contained within the input CSV file.
+The second image displays the calculated cosine similarity between all potential pairs of images and captions contained within the input CSV file.
 
 ![SimilarityMatrix](assets/similarity_matrix.jpg)
+
+## System Specification
+A workstation with the following specifications was used to run the code 
+
+|    | GPU | GPU Memory (GiB)| vCPUs | Memory (GiB)|
+|-----||-----|-----|------|------|
+Workstation specs|1	| 24 |	8 |	32|
+
+## Resource Usage
+
+
 
 
 
