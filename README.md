@@ -1,6 +1,6 @@
 # Image to Text Similarity
 
-For this project, we deployed [CLIP](https://openai.com/blog/clip/). CLIP (Contrastive Language-Image Pre-Training) is a deep learning model that is trained on a variety of image-caption pairs. CLIP has both an image encoder and a language encoder. As a result of its novel training process, CLIP is able to map texts and images to the same latent space.
+[CLIP](https://openai.com/blog/clip/) (Contrastive Language-Image Pre-Training) is a deep learning model that is trained on a variety of image-caption pairs. It has both an image encoder and a language encoder. As a result of its novel training process, CLIP is able to map texts and images to the same latent space.
 
 ## Approach
 
